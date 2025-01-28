@@ -4,7 +4,7 @@ plugins {
 }
 
 allprojects {
-    group = "mc.plugin.template"
+    group = "example.plugin"
     version = "1.0.0"
     description = "An example template for creating Minecraft plugins"
 

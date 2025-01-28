@@ -2,6 +2,7 @@
 kotlin = "2.0.21"                  # Kotlin plugin version
 shadow = "9.0.0-beta6"             # Shadow plugin version
 paperweight = "1.7.7"              # Paperweight plugin version
+bukkit-factory = "1.2.0"
 
 paper = "1.18.2-R0.1-SNAPSHOT"     # Paper server software version
 
@@ -13,3 +14,4 @@ paper = "1.18.2-R0.1-SNAPSHOT"     # Paper server software version
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }                    # Kotlin JVM plugin
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }                         # Shadow plugin
 paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }    # Paperweight plugin
+bukkit-factory = { id = "xyz.jpenilla.resource-factory-bukkit-convention", version.ref = "bukkit-factory" }
