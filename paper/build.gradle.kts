@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.paperweight) // Paperweight plugin for Minecraft server development
-    alias(libs.plugins.bukkit.factory) // Bukkit resource factory plugin for generating plugin.yml at build time
-    alias(libs.plugins.run.paper) // The run-task plugin for running a test server and testing the plugin
+    alias(libs.plugins.paperweight)         // Paperweight plugin for Minecraft server development
+    alias(libs.plugins.bukkit.factory)      // Bukkit resource factory plugin for generating plugin.yml at build time
+    alias(libs.plugins.run.paper)           // The run-task plugin for running a test server and testing the plugin
 }
 
 repositories {
@@ -10,6 +10,8 @@ repositories {
 
 dependencies {
     paperweight.paperDevBundle(libs.versions.paper) // Paper development bundle
+
+    // implementation(libs.bstats)
 }
 
 java {
@@ -25,6 +27,10 @@ tasks {
             modrinth("viabackwards", "5.2.2-SNAPSHOT+391")
         }
     }
+
+//    shadowJar {
+//        relocate("org.bstats", "example.plugin.template.libs.bstats")
+//    }
 }
 
 bukkitPluginYaml {
