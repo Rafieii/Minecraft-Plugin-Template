@@ -17,7 +17,14 @@ java {
 }
 
 tasks {
-    runServer { minecraftVersion("1.18.2") } // Configure the Minecraft server version.
+    runServer {
+        minecraftVersion("1.18.2") // Configure the Minecraft server version.
+        downloadPlugins {
+            // Download ViaVersion and ViaBackwards plugins.
+            modrinth("viaversion", "5.2.2-SNAPSHOT+686")
+            modrinth("viabackwards", "5.2.2-SNAPSHOT+391")
+        }
+    }
 }
 
 bukkitPluginYaml {
